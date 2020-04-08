@@ -23,11 +23,14 @@ def take_input():
             curr.next = new_node
     return head
 
-
-
-
+def printLL(head):
+    while head is not None:
+        print(str(head.data)+"->", end="")
+        head = head.next
+    print("None")
+    return
 head = take_input()
-print(head.next.data)
+printLL(head)
 
 
 
