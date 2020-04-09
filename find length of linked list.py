@@ -5,9 +5,6 @@ class Node:
 
 
 def length(head):
-    #############################
-    # PLEASE ADD YOUR CODE HERE #
-    #############################
     len = 0
     temp = head
     while temp is not None:
