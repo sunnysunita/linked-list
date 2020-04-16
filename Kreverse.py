@@ -1,35 +1,3 @@
-
-def sortList(head):
-
-
-    swap = 0
-    if head != None:
-        while(1):
-
-            swap = 0
-            tmp = head
-            while(tmp.next != None):
-                if tmp.val > tmp.next.val:
-                    # swap them
-                    swap += 1
-                    p = tmp.val
-                    tmp.val = tmp.next.val
-                    tmp.next.val = p
-                    tmp = tmp.next
-                else:
-                    tmp = tmp.next
-
-            if swap == 0:
-                break
-            else:
-                continue
-
-
-
-        return head
-    else:
-        return head
-
 class Node:
     def __init__(self, data):
         self.data = data
@@ -73,5 +41,5 @@ def reverse(head, k):
 list = [int(e) for e in input().split()]
 k = int(input())
 head = createLL(list[:-1])
-head = sortList(head)
+head = reverse(head, k)
 printLL(head)
